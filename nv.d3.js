@@ -3368,7 +3368,7 @@ nv.models.discreteBar = function() {
       groups
           .transition()
           .style('stroke-opacity', 1)
-          .style('fill-opacity', .75);
+          .style('fill-opacity', 1);
 
 
       var bars = groups.selectAll('g.nv-bar')
