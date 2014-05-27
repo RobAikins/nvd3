@@ -3786,6 +3786,13 @@ nv.models.discreteBarChart = function() {
 
           var xTicks = g.select('.nv-x.nv-axis').selectAll('g');
 
+          xTicks.style('fill', function(d,i) { 
+            if(i>1){ 
+            return color(d,i-2)
+            } else {
+              return null;
+          }});
+
           if (staggerLabels) {
             xTicks
                 .selectAll('text')
