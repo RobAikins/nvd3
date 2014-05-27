@@ -3642,7 +3642,7 @@ nv.models.discreteBarChart = function() {
     ;
   yAxis
     .orient((rightAlignYAxis) ? 'right' : 'left')
-    .tickFormat(d3.format(',.1f'))
+    .tickFormat(d3.format(',.0f'))
     ;
 
   //============================================================
