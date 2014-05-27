@@ -1130,6 +1130,7 @@ nv.utils.optionsFunc = function(args) {
           var xLabelMargin = 36;
           var maxTextWidth = 30;
           var xTicks = g.selectAll('g').select("text");
+          g.selectAll('g').select('line').style('stroke', 'white');
           if (rotateLabels%360) {
             //Calculate the longest xTick width
             xTicks.each(function(d,i){
